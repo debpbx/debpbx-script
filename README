@@ -1,8 +1,8 @@
 COMO OBTENER ACCESO AL SISTEMA DE CONTROL DE VERSIONES DE DEBPBX
 
-Si quires colaborar con código e ideas en este proyecto necesitas tener acceso al repositorio GIT.
+Si quires colaborar con codigo e ideas en este proyecto necesitas tener acceso al repositorio GIT.
 
-Para tener acceso, debes solicitarnos y enviarnos tu clave pública y tu nombre de usuario en www.github.com.
+Para tener acceso, debes solicitarnos y enviarnos tu clave publica y tu nombre de usuario en www.github.com.
 
 1.- Gererar una clave dsa publica/privada en caso de no tenerla en /home/usuario/.ssh/id_dsa.pub:
 
