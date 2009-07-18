@@ -1,0 +1,36 @@
+COMO OBTENER ACCESO AL SISTEMA DE CONTROL DE VERSIONES DE DEBPBX
+
+Si quires colaborar con código e ideas en este proyecto necesitas tener acceso al repositorio GIT.
+
+Para tener acceso, debes solicitarnos y enviarnos tu clave pública y tu nombre de usuario en www.github.com.
+
+1.- Gererar una clave dsa publica/privada en caso de no tenerla en /home/usuario/.ssh/id_dsa.pub:
+
+$ ssh-keygen -t dsa
+Generating public/private dsa key pair.
+Enter file in which to save the key (/home/usuario/.ssh/id_dsa): <enter>
+Enter passphrase (empty for no passphrase): <enter passphrase or hit enter>
+Enter same passphrase again: <enter passphrase again>
+Your identification has been saved in /home/usuario/.ssh/id_dsa.
+Your public key has been saved in /home/usuario/.ssh/id_dsa.pub.
+The key fingerprint is: <hex string>
+
+2.- Copiar y enviarnos el contenido de /home/usuario/.ssh/id_dsa.pub
+
+Una vez que la clave publica ha sido permitida, para conectarte debes hacer lo siguiente:
+
+Instalar git:
+aptitude install git
+
+Copia el repositorio a tu disco:
+mkdir -p /home/usuario/debpbx
+cd /home/usuario/debpbx
+git init
+git clone git://github.com/debpbx/debpbx-iso.git
+git remote add origin git@github.com:debpbx/debpbx-script.git
+git push origin master
+
+Cuando hagas un cambio puedes puedes subirlos con:
+git add archivo
+git commit -m 'descripcion'
+git push add origin master
